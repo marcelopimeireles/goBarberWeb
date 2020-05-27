@@ -1,16 +1,19 @@
 import React from 'react';
+import { Router } from 'react-router-dom';
 // import './App.css';
 
-// import Routes from './routes';
+import './config/reactotronConfig';
+
+import history from './services/history';
+import Routes from './routes';
 // import GlobalStyle from './styles/global';
 
 function App() {
   return (
-    // <>
-    //   <Routes />
-    //   <GlobalStyle />
-    // </>
-    <h1>Hello World</h1>
+    <Router history={history}>
+      <Routes />
+      {/* <GlobalStyle /> */}
+    </Router>
   );
 }
 
