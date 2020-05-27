@@ -1,0 +1,8 @@
+{
+  "vompilerOptions": {
+    "baseUrl" : "src",
+    "paths": {
+      "~/*": ["*"],
+    }
+  }
+}
