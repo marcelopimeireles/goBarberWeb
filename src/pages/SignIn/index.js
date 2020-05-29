@@ -35,7 +35,6 @@ function SignIn() {
           type="password"
           placeholder="Sua senha secreta"
         />
-        <p>Loading: {loading}</p>
         <button type="submit">{loading ? 'Carregando...' : 'Acessar'}</button>
         <Link to="/register">Criar conta gratuita</Link>
       </Form>
