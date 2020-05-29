@@ -57,7 +57,7 @@ export function setToken({ payload }) {
     api.defaults.headers = {
       ContentType: 'application/json',
       Accept: 'application/json',
-      Auhtorization: `Bearer ${token}`,
+      Authorization: `Bearer ${token}`,
     };
   }
 }
