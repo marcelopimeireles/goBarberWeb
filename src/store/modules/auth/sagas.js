@@ -21,6 +21,8 @@ export function* signIn({ payload }) {
       toast.error('Usuário não é prestador');
     }
 
+    api.defaults.headers.Authorization = `Bearer ${token}`;
+
     yield put(signInSuccess(token, user));
 
     history.push('/dashboard');
